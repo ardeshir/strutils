@@ -27,3 +27,19 @@ func TestReverse(t *testing.T){
 	}
 }
 
+// Benchmark for SwapCase function
+
+func BenchmarkSwapCase(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		SwapCase("Hello, World")
+	}
+}
+
+// Benchmark for Reverse function
+
+func BenchmarkReverse(b *testing.B) {
+	for i := 0; i< b.N; i++ {
+	Reverse("Hello, World")
+	}
+}
+
