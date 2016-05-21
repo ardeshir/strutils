@@ -14,7 +14,7 @@ func SwapCase(str string) string {
 		if unicode.IsUpper(r) {
 			buf.WriteRune(unicode.ToLower(r))
 		} else {
-			bun.WriteRune(unicode.ToUpper(r))
+			buf.WriteRune(unicode.ToUpper(r))
 		}
 	}
 	
