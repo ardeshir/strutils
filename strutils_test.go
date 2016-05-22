@@ -2,6 +2,7 @@ package strutils
 
 import(
 	"testing"
+        "fmt"
 )
 
 // Test case for the SwapCase function
@@ -41,5 +42,18 @@ func BenchmarkReverse(b *testing.B) {
 	for i := 0; i< b.N; i++ {
 	Reverse("Hello, World")
 	}
+}
+
+// Example code for Reverse function
+
+func ExampleReverse(){
+	fmt.Println(Reverse("Hello, World"))
+	// Output: dlroW ,olleH
+}
+
+func ExampleSwapCase(){
+	fmt.Println(SwapCase("Hello, World"))
+	// Output: hELLO, wORLD
+
 }
 
